@@ -1,5 +1,5 @@
 I was having some issues while working with Sniper Multicore Simulator 7.2 with Pin tools 3.11. 
-So I followed the logs and found some ways to clean things up and make it workable. Keeping it here so that in future I might use the same application without any hassles. 
+So I followed the logs and found some ways to clean things up and make it workable. Keeping it here so that in future I might use the same application without any hassles. (Tested on Ubuntu 18.04)
 ======================================================================================================================
 
 <ol>
@@ -49,7 +49,6 @@ So I followed the logs and found some ways to clean things up and make it workab
     <code> for filebase in ('source/include/pin/gen/cc_used_ia32_l.CVH', 'source/include/gen/cc_used_ia32_l.CVH'):
     </code> <br>
     To :
-    
     <code> for filebase in ( 'source/include/pin/pin_version.h', ):
     </code> <br>
     Remember the comma after the path is important. This is to treat the range as a tuple, if we do not put the comma, then the range would be compared as a array of string instead.
