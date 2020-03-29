@@ -45,7 +45,10 @@ So I followed the logs and found some ways to clean things up and make it workab
   </li>
 
   <li> 
-    Modify the <code> ~/sniper-7.2/tools/pinversion.py </code> file at <code> Line 12 </code> <br>
+    Modify the <code> ~/sniper-7.2/tools/pinversion.py </code> file at <code> Line 11 </code> <br>
+    <code> for filebase in ('source/include/pin/gen/cc_used_ia32_l.CVH', 'source/include/gen/cc_used_ia32_l.CVH'):
+    </code> <br>
+    To :
     <code> for filebase in ( 'source/include/pin/pin_version.h', ):
     </code> <br>
     Remember the comma after the path is important. This is to treat the range as a tuple, if we do not put the comma, then the range would be compared as a array of string instead.
