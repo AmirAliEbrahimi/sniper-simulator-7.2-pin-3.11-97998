@@ -19,7 +19,7 @@ So I followed the logs and found some ways to clean things up and make it workab
   <li> 
     Then install required Dependencies <br> 
     <code> $ sudo dpkg --add-architecture i386 </code> <br>
-    <code> $ sudo apt-get install binutils build-essential curl git libboost-dev libbz2-dev libc6:i386 libncurses5:i386 libsqlite3-dev libstdc++6:i386 python wget zlib1g-dev </code>
+    <code> $ sudo apt-get install binutils build-essential curl git libboost-dev libbz2-dev libncurses5 libsqlite3-dev libstdc++6 python wget zlib1g-dev libdb1-compat tzdata </code>
   </li>
 
   <li> 
