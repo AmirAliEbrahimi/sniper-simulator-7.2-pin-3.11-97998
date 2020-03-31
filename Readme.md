@@ -41,7 +41,7 @@ So I followed the logs and found some ways to clean things up and make it workab
 
   <li>
     add <code> PIN_HOME </code> variable to system path by editing <code> ~/.bashrc </code> <br>
-    <code> export PIN_HOME="~/sniper-7.2/pin_kit" </code>
+    <code> export PIN_HOME=~/sniper-7.2/pin_kit </code>
   </li>
 
   <li> 
